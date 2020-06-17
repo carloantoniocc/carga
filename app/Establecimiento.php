@@ -11,12 +11,12 @@ class Establecimiento extends Model
 {
     public function comuna()
     {
-        return $this->hasMany('GastosDTI\Comuna');
+        return $this->hasMany('App\Comuna');
     }
 	
 	public function tipo()
     {
-        return $this->hasMany('GastosDTI\TipoEstab');
+        return $this->hasMany('App\TipoEstab');
     }
 	
 	/**
@@ -24,7 +24,7 @@ class Establecimiento extends Model
      */
 	public function users()
     {
-        return $this->belongsToMany('GastosDTI\User');
+        return $this->belongsToMany('App\User');
     }
 	
 	/**
@@ -45,7 +45,7 @@ class Establecimiento extends Model
 
 	public function establecimiento()
 	{
-		return $this->hasOne('GastosDTI\Establecimiento');
+		return $this->hasOne('App\Establecimiento');
 	}
 
 }

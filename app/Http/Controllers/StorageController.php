@@ -55,7 +55,7 @@ class StorageController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \GastosDTI\Storage  $storage
+     * @param  \App\Storage  $storage
      * @return \Illuminate\Http\Response
      */
     public function show(Storage $storage)
@@ -66,7 +66,7 @@ class StorageController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \GastosDTI\Storage  $storage
+     * @param  \App\Storage  $storage
      * @return \Illuminate\Http\Response
      */
     public function edit(Storage $storage)
@@ -79,7 +79,7 @@ class StorageController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \GastosDTI\Storage  $storage
+     * @param  \App\Storage  $storage
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Storage $storage)
@@ -96,7 +96,7 @@ class StorageController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \GastosDTI\Storage  $storage
+     * @param  \App\Storage  $storage
      * @return \Illuminate\Http\Response
      */
     public function destroy(Storage $storage)
